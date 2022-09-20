@@ -1,0 +1,14 @@
+﻿@page "/RouteParameter/{text?}"
+
+
+<h1>I am learning @Text</h1>
+
+@code {
+    [Parameter]
+    public string? Text { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        Text = Text ?? "Balzor";
+    }
+}

@@ -1,0 +1,36 @@
+﻿global using System.Data;
+global using System.Globalization;
+global using System.Linq.Expressions;
+global using System.Security.Claims;
+global using System.Text;
+global using System.Text.Encodings.Web;
+global using System.Text.Json;
+
+global using Huayu.Wms.Identity.Application.Configurations;
+global using Huayu.Shared.Constants.Permissions;
+global using Huayu.Shared.Constants.Role;
+global using Huayu.Shared.Wrapper;
+global using Huayu.Wms.Identity.Application.Enums;
+global using Huayu.Wms.Identity.Application.Exceptions;
+global using Huayu.Wms.Identity.Application.Extensions;
+global using Huayu.Wms.Identity.Application.Interfaces.Common;
+global using Huayu.Wms.Identity.Application.Interfaces.Services;
+global using Huayu.Wms.Identity.Application.Requests.Identity;
+global using Huayu.Wms.Identity.Application.Requests.Mail;
+global using Huayu.Wms.Identity.Application.Responses.Identity;
+global using Huayu.Wms.Identity.Application.Specifications.Base;
+global using Huayu.Wms.Identity.Infrastructure.Data.EntityConfigurations;
+global using Huayu.Wms.Identity.Infrastructure.Models;
+global using Huayu.Wms.Identity.Infrastructure.Services;
+global using Huayu.Wms.Identity.Infrastructure.Specifications;
+
+global using Microsoft.IdentityModel.Tokens;
+global using Microsoft.IdentityModel.JsonWebTokens;
+global using Microsoft.AspNetCore.Authorization;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.WebUtilities;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.ChangeTracking;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
